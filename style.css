@@ -356,3 +356,204 @@ footer {
     }
 
 }
+/* =========================================
+   INNER PAGE STYLES
+   ========================================= */
+
+
+/* ---------- PAGE HERO ---------- */
+
+.page-hero {
+    min-height: 55vh;
+}
+
+
+/* ---------- SERVICE DETAILS ---------- */
+
+.service-detail {
+    padding: 7rem 8%;
+
+    background-color: var(--warm-white);
+}
+
+.service-detail > div {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+.service-detail h2 {
+    margin-bottom: 1.5rem;
+}
+
+.service-detail p:not(.eyebrow) {
+    color: var(--muted);
+
+    font-size: 1.1rem;
+
+    max-width: 700px;
+}
+
+.service-detail.alternate {
+    background-color: var(--sand);
+}
+
+
+/* ---------- RESOURCE GRID ---------- */
+
+.resource-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+.resource-card {
+    background-color: var(--warm-white);
+
+    padding: 2.5rem;
+
+    border-top: 3px solid var(--clay);
+}
+
+.resource-card h2 {
+    font-size: 2rem;
+}
+
+.resource-card p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+.resource-card a {
+    color: var(--earth);
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.resource-card a:hover {
+    color: var(--clay);
+}
+
+
+/* ---------- FAQ ---------- */
+
+.faq-section {
+    max-width: 850px;
+}
+
+.faq-item {
+    padding: 2rem 0;
+
+    border-bottom: 1px solid var(--sand);
+}
+
+.faq-item:first-child {
+    padding-top: 0;
+}
+
+.faq-item h2 {
+    font-size: 1.7rem;
+
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    color: var(--muted);
+
+    margin: 0;
+}
+
+
+/* ---------- CREDENTIALS ---------- */
+
+.credentials-section {
+    background-color: var(--warm-white);
+
+    max-width: none;
+
+    text-align: center;
+}
+
+.credentials-section p:not(.eyebrow) {
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--muted);
+}
+
+.credentials-list {
+    max-width: 650px;
+
+    margin: 2rem auto 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.credentials-list li {
+    padding: 1rem;
+
+    border-bottom: 1px solid var(--sand);
+}
+
+
+/* ---------- CONTACT PLACEHOLDER ---------- */
+
+.contact-placeholder {
+    max-width: 700px;
+
+    margin: 3rem auto 0;
+
+    padding: 3rem;
+
+    background-color: var(--warm-white);
+
+    text-align: left;
+
+    border-top: 3px solid var(--clay);
+}
+
+.contact-placeholder h3 {
+    color: var(--earth);
+
+    font-size: 1.7rem;
+
+    font-weight: normal;
+}
+
+.contact-placeholder p {
+    color: var(--muted);
+
+    padding: 0.75rem 0;
+
+    border-bottom: 1px solid var(--sand);
+}
+
+
+/* ---------- MOBILE INNER PAGES ---------- */
+
+@media (max-width: 800px) {
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail {
+        padding: 5rem 1.5rem;
+    }
+
+    .resource-card {
+        padding: 2rem;
+    }
+
+    .contact-placeholder {
+        padding: 2rem 1.5rem;
+    }
+
+}
